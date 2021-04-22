@@ -72,6 +72,7 @@
 
 /* Begin PBXFileReference section */
 		844BE0E326321E290012F4ED /* EmojiWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiWidgetBundle.swift; sourceTree = "<group>"; };
+		844BE10226322B490012F4ED /* IOSAppExtensions.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IOSAppExtensions.entitlements; sourceTree = "<group>"; };
 		844F6C9E2631F77900E1EDC0 /* IOSAppExtensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSAppExtensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844F6CA12631F77900E1EDC0 /* IOSAppExtensionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSAppExtensionsApp.swift; sourceTree = "<group>"; };
 		844F6CA52631F77C00E1EDC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -162,6 +163,7 @@
 		844F6CA02631F77900E1EDC0 /* IOSAppExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				844BE10226322B490012F4ED /* IOSAppExtensions.entitlements */,
 				844F6CC5263204AA00E1EDC0 /* Modules */,
 				844F6CBA2631FB8F00E1EDC0 /* DomainLogic */,
 				844F6CA12631F77900E1EDC0 /* IOSAppExtensionsApp.swift */,
@@ -580,6 +582,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IOSAppExtensions/IOSAppExtensions.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"IOSAppExtensions/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
@@ -592,7 +595,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pdp.IOSAppExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -602,6 +605,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IOSAppExtensions/IOSAppExtensions.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"IOSAppExtensions/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
@@ -614,7 +618,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pdp.IOSAppExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

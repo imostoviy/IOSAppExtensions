@@ -1,0 +1,9 @@
+{
+    "Simulator Target Bundle": "pdp.IOSAppExtensions",
+    "aps":  {
+      "alert": "Mutable",
+      "mutable-content": 1,
+      "sound": "default"
+    },
+    "content": [27, 4, 1, 28, 3, 68, 106, 68]
+}
