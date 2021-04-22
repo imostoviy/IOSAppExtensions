@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		844BE0E426321E290012F4ED /* EmojiWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BE0E326321E290012F4ED /* EmojiWidgetBundle.swift */; };
+		844BE11F263231EA0012F4ED /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BE11E263231EA0012F4ED /* NotificationService.swift */; };
+		844BE123263231EA0012F4ED /* XORUNNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 844BE11C263231EA0012F4ED /* XORUNNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		844F6CA22631F77900E1EDC0 /* IOSAppExtensionsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F6CA12631F77900E1EDC0 /* IOSAppExtensionsApp.swift */; };
 		844F6CA62631F77C00E1EDC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844F6CA52631F77C00E1EDC0 /* Assets.xcassets */; };
 		844F6CA92631F77C00E1EDC0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844F6CA82631F77C00E1EDC0 /* Preview Assets.xcassets */; };
@@ -39,6 +41,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		844BE121263231EA0012F4ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 844F6C962631F77900E1EDC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 844BE11B263231EA0012F4ED;
+			remoteInfo = XORUNNotificationServiceExtension;
+		};
 		844F6CD72632050100E1EDC0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 844F6C962631F77900E1EDC0 /* Project object */;
@@ -62,6 +71,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				844BE123263231EA0012F4ED /* XORUNNotificationServiceExtension.appex in Embed App Extensions */,
 				844F6D27263216AE00E1EDC0 /* EmojiIntent.appex in Embed App Extensions */,
 				844F6CD92632050100E1EDC0 /* RandomEmojiWidgetExtension.appex in Embed App Extensions */,
 			);
@@ -73,6 +83,9 @@
 /* Begin PBXFileReference section */
 		844BE0E326321E290012F4ED /* EmojiWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiWidgetBundle.swift; sourceTree = "<group>"; };
 		844BE10226322B490012F4ED /* IOSAppExtensions.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IOSAppExtensions.entitlements; sourceTree = "<group>"; };
+		844BE11C263231EA0012F4ED /* XORUNNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XORUNNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		844BE11E263231EA0012F4ED /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		844BE120263231EA0012F4ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		844F6C9E2631F77900E1EDC0 /* IOSAppExtensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSAppExtensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844F6CA12631F77900E1EDC0 /* IOSAppExtensionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSAppExtensionsApp.swift; sourceTree = "<group>"; };
 		844F6CA52631F77C00E1EDC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,6 +116,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		844BE119263231EA0012F4ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		844F6C9B2631F77900E1EDC0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -139,12 +159,22 @@
 			path = Widgets;
 			sourceTree = "<group>";
 		};
+		844BE11D263231EA0012F4ED /* XORUNNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				844BE11E263231EA0012F4ED /* NotificationService.swift */,
+				844BE120263231EA0012F4ED /* Info.plist */,
+			);
+			path = XORUNNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
 		844F6C952631F77900E1EDC0 = {
 			isa = PBXGroup;
 			children = (
 				844F6CA02631F77900E1EDC0 /* IOSAppExtensions */,
 				844F6CD1263204FB00E1EDC0 /* RandomEmojiWidget */,
 				844F6D10263216AD00E1EDC0 /* EmojiIntent */,
+				844BE11D263231EA0012F4ED /* XORUNNotificationServiceExtension */,
 				844F6CCC263204FB00E1EDC0 /* Frameworks */,
 				844F6C9F2631F77900E1EDC0 /* Products */,
 			);
@@ -156,6 +186,7 @@
 				844F6C9E2631F77900E1EDC0 /* IOSAppExtensions.app */,
 				844F6CCB263204FB00E1EDC0 /* RandomEmojiWidgetExtension.appex */,
 				844F6D0D263216AD00E1EDC0 /* EmojiIntent.appex */,
+				844BE11C263231EA0012F4ED /* XORUNNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -280,6 +311,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		844BE11B263231EA0012F4ED /* XORUNNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 844BE126263231EA0012F4ED /* Build configuration list for PBXNativeTarget "XORUNNotificationServiceExtension" */;
+			buildPhases = (
+				844BE118263231EA0012F4ED /* Sources */,
+				844BE119263231EA0012F4ED /* Frameworks */,
+				844BE11A263231EA0012F4ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XORUNNotificationServiceExtension;
+			productName = XORUNNotificationServiceExtension;
+			productReference = 844BE11C263231EA0012F4ED /* XORUNNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		844F6C9D2631F77900E1EDC0 /* IOSAppExtensions */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 844F6CAD2631F77C00E1EDC0 /* Build configuration list for PBXNativeTarget "IOSAppExtensions" */;
@@ -294,6 +342,7 @@
 			dependencies = (
 				844F6CD82632050100E1EDC0 /* PBXTargetDependency */,
 				844F6D26263216AE00E1EDC0 /* PBXTargetDependency */,
+				844BE122263231EA0012F4ED /* PBXTargetDependency */,
 			);
 			name = IOSAppExtensions;
 			productName = IOSAppExtensions;
@@ -343,6 +392,9 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					844BE11B263231EA0012F4ED = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					844F6C9D2631F77900E1EDC0 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -370,11 +422,19 @@
 				844F6C9D2631F77900E1EDC0 /* IOSAppExtensions */,
 				844F6CCA263204FB00E1EDC0 /* RandomEmojiWidgetExtension */,
 				844F6D0C263216AD00E1EDC0 /* EmojiIntent */,
+				844BE11B263231EA0012F4ED /* XORUNNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		844BE11A263231EA0012F4ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		844F6C9C2631F77900E1EDC0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -402,6 +462,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		844BE118263231EA0012F4ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844BE11F263231EA0012F4ED /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		844F6C9A2631F77900E1EDC0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -447,6 +515,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		844BE122263231EA0012F4ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 844BE11B263231EA0012F4ED /* XORUNNotificationServiceExtension */;
+			targetProxy = 844BE121263231EA0012F4ED /* PBXContainerItemProxy */;
+		};
 		844F6CD82632050100E1EDC0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 844F6CCA263204FB00E1EDC0 /* RandomEmojiWidgetExtension */;
@@ -460,6 +533,44 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		844BE124263231EA0012F4ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = XORUNNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pdp.IOSAppExtensions.XORUNNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		844BE125263231EA0012F4ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = XORUNNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pdp.IOSAppExtensions.XORUNNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		844F6CAB2631F77C00E1EDC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -583,8 +694,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = IOSAppExtensions/IOSAppExtensions.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"IOSAppExtensions/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = IOSAppExtensions/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -594,6 +706,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = pdp.IOSAppExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -606,8 +719,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = IOSAppExtensions/IOSAppExtensions.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"IOSAppExtensions/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = IOSAppExtensions/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -617,6 +731,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = pdp.IOSAppExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -701,6 +816,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		844BE126263231EA0012F4ED /* Build configuration list for PBXNativeTarget "XORUNNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				844BE124263231EA0012F4ED /* Debug */,
+				844BE125263231EA0012F4ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		844F6C992631F77900E1EDC0 /* Build configuration list for PBXProject "IOSAppExtensions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

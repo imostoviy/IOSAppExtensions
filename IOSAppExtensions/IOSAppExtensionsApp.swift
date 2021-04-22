@@ -33,12 +33,12 @@ final class AppDelegate: NSObject, UIApplicationDelegate {
     }
     
     private func requestAuthorizationForNotifications() {
-        UNUserNotificationCenter
-            .current()
+        let notificationCenter = UNUserNotificationCenter.current()
+        notificationCenter.delegate = self
+        notificationCenter
             .requestAuthorization(options: [.alert, .sound, .badge]) { allowed, error in
                 if allowed {
                     os_log(.debug, "Allowed")
-                    UNUserNotificationCenter.current().delegate = self
                 } else {
                     os_log(.debug, "Error")
                 }
