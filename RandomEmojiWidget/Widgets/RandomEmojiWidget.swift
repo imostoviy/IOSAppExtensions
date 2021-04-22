@@ -10,7 +10,7 @@ import SwiftUI
 
 struct Provider: TimelineProvider {
     private var random: Emoji {
-        EmojiProvider().random
+        EmojiProvider.random
     }
     
     func placeholder(in context: Context) -> SimpleEntry {
@@ -62,7 +62,6 @@ struct RandomEmojiWidgetEntryView : View {
     }
 }
 
-@main
 struct RandomEmojiWidget: Widget {
     let kind: String = "RandomEmojiWidget"
 
@@ -78,7 +77,7 @@ struct RandomEmojiWidget: Widget {
 
 struct RandomEmojiWidget_Previews: PreviewProvider {
     static var previews: some View {
-        RandomEmojiWidgetEntryView(entry: SimpleEntry(date: Date(), emoji: EmojiProvider().random))
+        RandomEmojiWidgetEntryView(entry: SimpleEntry(date: Date(), emoji: EmojiProvider.random))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

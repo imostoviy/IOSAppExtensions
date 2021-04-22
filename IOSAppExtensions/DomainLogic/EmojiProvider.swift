@@ -8,11 +8,11 @@
 import Foundation
 
 public struct EmojiProvider {
-    var random: Emoji {
+    static var random: Emoji {
         all.randomElement() ?? all[0]
     }
     
-    var all: [Emoji] {
+    static var all: [Emoji] {
         [
             Emoji(
                 emojiString: "👾",

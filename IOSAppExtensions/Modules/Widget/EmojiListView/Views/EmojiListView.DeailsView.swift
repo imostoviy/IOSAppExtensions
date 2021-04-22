@@ -33,6 +33,6 @@ extension EmojiListView {
 
 struct EmojiDetailsView_preview: PreviewProvider {
     static var previews: some View {
-        EmojiListView.DetailsView(emoji: EmojiProvider().all[1])
+        EmojiListView.DetailsView(emoji: EmojiProvider.random)
     }
 }

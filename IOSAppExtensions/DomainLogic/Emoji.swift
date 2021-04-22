@@ -26,6 +26,6 @@ struct Emoji {
 // MARK: - Extension Identifiable
 extension Emoji: Identifiable {
     var id: String {
-        UUID().uuidString
+        emojiString
     }
 }

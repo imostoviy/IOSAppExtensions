@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct EmojiListView: View {
-    private let emojies = EmojiProvider().all
+    private let emojies = EmojiProvider.all
     @State private var selectedEmoji: Emoji?
     
     var body: some View {

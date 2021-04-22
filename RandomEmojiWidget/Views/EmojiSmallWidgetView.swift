@@ -31,6 +31,6 @@ struct EmojiSmallWidgetView: View {
 // MARK: - Preview
 struct EmojiSmallWidgetView_Preview: PreviewProvider {
     static var previews: some View {
-        EmojiSmallWidgetView(emoji: EmojiProvider().random)
+        EmojiSmallWidgetView(emoji: EmojiProvider.random)
     }
 }
