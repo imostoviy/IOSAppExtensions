@@ -1,0 +1,10 @@
+{
+    "Simulator Target Bundle": "pdp.IOSAppExtensions"
+    "aps":  {
+      "alert": "UIextension",
+      "url": "https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png?201809240700",
+      "text": "Some text",
+      "category": "content",
+      "sound": "default"
+    }
+}
