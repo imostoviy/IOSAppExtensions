@@ -10,6 +10,11 @@
 		844BE0E426321E290012F4ED /* EmojiWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BE0E326321E290012F4ED /* EmojiWidgetBundle.swift */; };
 		844BE11F263231EA0012F4ED /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BE11E263231EA0012F4ED /* NotificationService.swift */; };
 		844BE123263231EA0012F4ED /* XORUNNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 844BE11C263231EA0012F4ED /* XORUNNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		844BE14E26323B980012F4ED /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844BE14D26323B980012F4ED /* UserNotifications.framework */; };
+		844BE15026323B980012F4ED /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844BE14F26323B980012F4ED /* UserNotificationsUI.framework */; };
+		844BE15A26323B990012F4ED /* UIUNNotificationContentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 844BE14C26323B980012F4ED /* UIUNNotificationContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		844BE16A26323C430012F4ED /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844BE16826323C430012F4ED /* MainInterface.storyboard */; };
+		844BE16B26323C430012F4ED /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BE16926323C430012F4ED /* NotificationViewController.swift */; };
 		844F6CA22631F77900E1EDC0 /* IOSAppExtensionsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F6CA12631F77900E1EDC0 /* IOSAppExtensionsApp.swift */; };
 		844F6CA62631F77C00E1EDC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844F6CA52631F77C00E1EDC0 /* Assets.xcassets */; };
 		844F6CA92631F77C00E1EDC0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844F6CA82631F77C00E1EDC0 /* Preview Assets.xcassets */; };
@@ -48,6 +53,13 @@
 			remoteGlobalIDString = 844BE11B263231EA0012F4ED;
 			remoteInfo = XORUNNotificationServiceExtension;
 		};
+		844BE15826323B990012F4ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 844F6C962631F77900E1EDC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 844BE14B26323B980012F4ED;
+			remoteInfo = UIUNNotificationContentExtension;
+		};
 		844F6CD72632050100E1EDC0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 844F6C962631F77900E1EDC0 /* Project object */;
@@ -73,6 +85,7 @@
 			files = (
 				844BE123263231EA0012F4ED /* XORUNNotificationServiceExtension.appex in Embed App Extensions */,
 				844F6D27263216AE00E1EDC0 /* EmojiIntent.appex in Embed App Extensions */,
+				844BE15A26323B990012F4ED /* UIUNNotificationContentExtension.appex in Embed App Extensions */,
 				844F6CD92632050100E1EDC0 /* RandomEmojiWidgetExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -86,6 +99,12 @@
 		844BE11C263231EA0012F4ED /* XORUNNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XORUNNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		844BE11E263231EA0012F4ED /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		844BE120263231EA0012F4ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		844BE14C26323B980012F4ED /* UIUNNotificationContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = UIUNNotificationContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		844BE14D26323B980012F4ED /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		844BE14F26323B980012F4ED /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		844BE15726323B990012F4ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		844BE16826323C430012F4ED /* MainInterface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		844BE16926323C430012F4ED /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		844F6C9E2631F77900E1EDC0 /* IOSAppExtensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSAppExtensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844F6CA12631F77900E1EDC0 /* IOSAppExtensionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSAppExtensionsApp.swift; sourceTree = "<group>"; };
 		844F6CA52631F77C00E1EDC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,6 +139,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		844BE14926323B980012F4ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844BE15026323B980012F4ED /* UserNotificationsUI.framework in Frameworks */,
+				844BE14E26323B980012F4ED /* UserNotifications.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +196,16 @@
 			path = XORUNNotificationServiceExtension;
 			sourceTree = "<group>";
 		};
+		844BE15126323B980012F4ED /* UIUNNotificationContentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				844BE16826323C430012F4ED /* MainInterface.storyboard */,
+				844BE16926323C430012F4ED /* NotificationViewController.swift */,
+				844BE15726323B990012F4ED /* Info.plist */,
+			);
+			path = UIUNNotificationContentExtension;
+			sourceTree = "<group>";
+		};
 		844F6C952631F77900E1EDC0 = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +213,7 @@
 				844F6CD1263204FB00E1EDC0 /* RandomEmojiWidget */,
 				844F6D10263216AD00E1EDC0 /* EmojiIntent */,
 				844BE11D263231EA0012F4ED /* XORUNNotificationServiceExtension */,
+				844BE15126323B980012F4ED /* UIUNNotificationContentExtension */,
 				844F6CCC263204FB00E1EDC0 /* Frameworks */,
 				844F6C9F2631F77900E1EDC0 /* Products */,
 			);
@@ -187,6 +226,7 @@
 				844F6CCB263204FB00E1EDC0 /* RandomEmojiWidgetExtension.appex */,
 				844F6D0D263216AD00E1EDC0 /* EmojiIntent.appex */,
 				844BE11C263231EA0012F4ED /* XORUNNotificationServiceExtension.appex */,
+				844BE14C26323B980012F4ED /* UIUNNotificationContentExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -264,6 +304,8 @@
 				844F6CCF263204FB00E1EDC0 /* SwiftUI.framework */,
 				844F6D0E263216AD00E1EDC0 /* Intents.framework */,
 				844F6D19263216AE00E1EDC0 /* IntentsUI.framework */,
+				844BE14D26323B980012F4ED /* UserNotifications.framework */,
+				844BE14F26323B980012F4ED /* UserNotificationsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -328,6 +370,23 @@
 			productReference = 844BE11C263231EA0012F4ED /* XORUNNotificationServiceExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		844BE14B26323B980012F4ED /* UIUNNotificationContentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 844BE15D26323B990012F4ED /* Build configuration list for PBXNativeTarget "UIUNNotificationContentExtension" */;
+			buildPhases = (
+				844BE14826323B980012F4ED /* Sources */,
+				844BE14926323B980012F4ED /* Frameworks */,
+				844BE14A26323B980012F4ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIUNNotificationContentExtension;
+			productName = UIUNNotificationContentExtension;
+			productReference = 844BE14C26323B980012F4ED /* UIUNNotificationContentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		844F6C9D2631F77900E1EDC0 /* IOSAppExtensions */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 844F6CAD2631F77C00E1EDC0 /* Build configuration list for PBXNativeTarget "IOSAppExtensions" */;
@@ -343,6 +402,7 @@
 				844F6CD82632050100E1EDC0 /* PBXTargetDependency */,
 				844F6D26263216AE00E1EDC0 /* PBXTargetDependency */,
 				844BE122263231EA0012F4ED /* PBXTargetDependency */,
+				844BE15926323B990012F4ED /* PBXTargetDependency */,
 			);
 			name = IOSAppExtensions;
 			productName = IOSAppExtensions;
@@ -395,6 +455,10 @@
 					844BE11B263231EA0012F4ED = {
 						CreatedOnToolsVersion = 12.4;
 					};
+					844BE14B26323B980012F4ED = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
 					844F6C9D2631F77900E1EDC0 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -423,6 +487,7 @@
 				844F6CCA263204FB00E1EDC0 /* RandomEmojiWidgetExtension */,
 				844F6D0C263216AD00E1EDC0 /* EmojiIntent */,
 				844BE11B263231EA0012F4ED /* XORUNNotificationServiceExtension */,
+				844BE14B26323B980012F4ED /* UIUNNotificationContentExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -432,6 +497,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		844BE14A26323B980012F4ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844BE16A26323C430012F4ED /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +540,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				844BE11F263231EA0012F4ED /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		844BE14826323B980012F4ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844BE16B26323C430012F4ED /* NotificationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +601,11 @@
 			target = 844BE11B263231EA0012F4ED /* XORUNNotificationServiceExtension */;
 			targetProxy = 844BE121263231EA0012F4ED /* PBXContainerItemProxy */;
 		};
+		844BE15926323B990012F4ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 844BE14B26323B980012F4ED /* UIUNNotificationContentExtension */;
+			targetProxy = 844BE15826323B990012F4ED /* PBXContainerItemProxy */;
+		};
 		844F6CD82632050100E1EDC0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 844F6CCA263204FB00E1EDC0 /* RandomEmojiWidgetExtension */;
@@ -568,6 +654,47 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		844BE15B26323B990012F4ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = UIUNNotificationContentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pdp.IOSAppExtensions.UIUNNotificationContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		844BE15C26323B990012F4ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = UIUNNotificationContentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pdp.IOSAppExtensions.UIUNNotificationContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -821,6 +948,15 @@
 			buildConfigurations = (
 				844BE124263231EA0012F4ED /* Debug */,
 				844BE125263231EA0012F4ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		844BE15D26323B990012F4ED /* Build configuration list for PBXNativeTarget "UIUNNotificationContentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				844BE15B26323B990012F4ED /* Debug */,
+				844BE15C26323B990012F4ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
