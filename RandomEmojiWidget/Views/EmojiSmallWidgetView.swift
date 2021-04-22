@@ -1,5 +1,5 @@
 //
-//  EmojiWidgetView.swift
+//  EmojiSmallWidgetView.swift
 //  RandomEmojiWidgetExtension
 //
 //  Created by Ihor Mostovyi on 22.04.2021.
@@ -7,8 +7,7 @@
 
 import SwiftUI
 
-struct EmojiWidgetView: View {
-    
+struct EmojiSmallWidgetView: View {
     let emoji: Emoji
     
     var body: some View {
@@ -21,7 +20,7 @@ struct EmojiWidgetView: View {
                     .font(.headline)
                     .multilineTextAlignment(.center)
                     .padding(.top, 5)
-                    .padding([.horizontal])
+                    .padding(.horizontal)
                     .foregroundColor(.white)
             }
         }
@@ -29,9 +28,8 @@ struct EmojiWidgetView: View {
 }
 
 // MARK: - Preview
-
-struct EmokiWidgetView: PreviewProvider {
+struct EmojiSmallWidgetView_Preview: PreviewProvider {
     static var previews: some View {
-        EmojiWidgetView(emoji: EmojiProvider().random)
+        EmojiSmallWidgetView(emoji: EmojiProvider().random)
     }
 }

@@ -44,10 +44,21 @@ struct SimpleEntry: TimelineEntry {
 }
 
 struct RandomEmojiWidgetEntryView : View {
+    @Environment(\.widgetFamily) var family: WidgetFamily
     var entry: Provider.Entry
 
+    @ViewBuilder
     var body: some View {
-        EmojiWidgetView(emoji: entry.emoji)
+        switch family {
+        case .systemSmall:
+            EmojiSmallWidgetView(emoji: entry.emoji)
+        case .systemMedium:
+            EmojiMediumWidgetView(emoji: entry.emoji)
+        case .systemLarge:
+            EmojiLargeWidgetView(emoji: entry.emoji)
+        @unknown default:
+            EmptyView()
+        }
     }
 }
 
@@ -61,7 +72,7 @@ struct RandomEmojiWidget: Widget {
         }
         .configurationDisplayName("Random emojii")
         .description("This is an example widget.")
-        .supportedFamilies([.systemSmall])
+        .supportedFamilies([.systemSmall, .systemMedium, .systemLarge])
     }
 }
 
