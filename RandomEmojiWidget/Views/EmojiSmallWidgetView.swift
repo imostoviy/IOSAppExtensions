@@ -24,6 +24,7 @@ struct EmojiSmallWidgetView: View {
                     .foregroundColor(.white)
             }
         }
+        .widgetURL(emoji.url)
     }
 }
 
