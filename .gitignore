@@ -1,0 +1,18 @@
+# Xcode
+.DS_Store
+.Trashes
+build/
+*.xcworkspace
+!default.xcworkspace
+xcuserdata
+*.moved-aside
+DerivedData
+.idea/
+*~.nib
+*.swp
+Pods/
+.bundle
+vendor
+fastlane/test_output
+fastlane/report.xml
+fastlane/.env
