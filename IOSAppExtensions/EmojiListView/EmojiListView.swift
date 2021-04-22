@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  EmojiListView.swift
 //  IOSAppExtensions
 //
 //  Created by Ihor Mostovyi on 22.04.2021.
@@ -7,15 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct EmojiListView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        EmptyView()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct EmojiListView_Preview: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        EmojiListView()
     }
 }

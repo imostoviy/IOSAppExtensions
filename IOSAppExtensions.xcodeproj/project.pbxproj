@@ -8,18 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		844F6CA22631F77900E1EDC0 /* IOSAppExtensionsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F6CA12631F77900E1EDC0 /* IOSAppExtensionsApp.swift */; };
-		844F6CA42631F77900E1EDC0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F6CA32631F77900E1EDC0 /* ContentView.swift */; };
 		844F6CA62631F77C00E1EDC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844F6CA52631F77C00E1EDC0 /* Assets.xcassets */; };
 		844F6CA92631F77C00E1EDC0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844F6CA82631F77C00E1EDC0 /* Preview Assets.xcassets */; };
+		844F6CB42631FA1D00E1EDC0 /* EmojiListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F6CB32631FA1D00E1EDC0 /* EmojiListView.swift */; };
+		844F6CB82631FB1500E1EDC0 /* EmojiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F6CB72631FB1500E1EDC0 /* EmojiProvider.swift */; };
+		844F6CBC2631FBE400E1EDC0 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F6CBB2631FBE400E1EDC0 /* Emoji.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		844F6C9E2631F77900E1EDC0 /* IOSAppExtensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSAppExtensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844F6CA12631F77900E1EDC0 /* IOSAppExtensionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSAppExtensionsApp.swift; sourceTree = "<group>"; };
-		844F6CA32631F77900E1EDC0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		844F6CA52631F77C00E1EDC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		844F6CA82631F77C00E1EDC0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		844F6CAA2631F77C00E1EDC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		844F6CB32631FA1D00E1EDC0 /* EmojiListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiListView.swift; sourceTree = "<group>"; };
+		844F6CB72631FB1500E1EDC0 /* EmojiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiProvider.swift; sourceTree = "<group>"; };
+		844F6CBB2631FBE400E1EDC0 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +56,9 @@
 		844F6CA02631F77900E1EDC0 /* IOSAppExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				844F6CB12631F9C700E1EDC0 /* EmojiListView */,
+				844F6CBA2631FB8F00E1EDC0 /* DomainLogic */,
 				844F6CA12631F77900E1EDC0 /* IOSAppExtensionsApp.swift */,
-				844F6CA32631F77900E1EDC0 /* ContentView.swift */,
 				844F6CA52631F77C00E1EDC0 /* Assets.xcassets */,
 				844F6CAA2631F77C00E1EDC0 /* Info.plist */,
 				844F6CA72631F77C00E1EDC0 /* Preview Content */,
@@ -67,6 +72,31 @@
 				844F6CA82631F77C00E1EDC0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		844F6CB12631F9C700E1EDC0 /* EmojiListView */ = {
+			isa = PBXGroup;
+			children = (
+				844F6CB32631FA1D00E1EDC0 /* EmojiListView.swift */,
+				844F6CB62631FAF200E1EDC0 /* Views */,
+			);
+			path = EmojiListView;
+			sourceTree = "<group>";
+		};
+		844F6CB62631FAF200E1EDC0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		844F6CBA2631FB8F00E1EDC0 /* DomainLogic */ = {
+			isa = PBXGroup;
+			children = (
+				844F6CBB2631FBE400E1EDC0 /* Emoji.swift */,
+				844F6CB72631FB1500E1EDC0 /* EmojiProvider.swift */,
+			);
+			path = DomainLogic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				844F6CA42631F77900E1EDC0 /* ContentView.swift in Sources */,
 				844F6CA22631F77900E1EDC0 /* IOSAppExtensionsApp.swift in Sources */,
+				844F6CB42631FA1D00E1EDC0 /* EmojiListView.swift in Sources */,
+				844F6CBC2631FBE400E1EDC0 /* Emoji.swift in Sources */,
+				844F6CB82631FB1500E1EDC0 /* EmojiProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
