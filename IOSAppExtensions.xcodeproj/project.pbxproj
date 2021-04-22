@@ -13,6 +13,8 @@
 		844F6CB42631FA1D00E1EDC0 /* EmojiListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F6CB32631FA1D00E1EDC0 /* EmojiListView.swift */; };
 		844F6CB82631FB1500E1EDC0 /* EmojiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F6CB72631FB1500E1EDC0 /* EmojiProvider.swift */; };
 		844F6CBC2631FBE400E1EDC0 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F6CBB2631FBE400E1EDC0 /* Emoji.swift */; };
+		844F6CBF2631FD1B00E1EDC0 /* EmojiListView.ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F6CBE2631FD1B00E1EDC0 /* EmojiListView.ItemView.swift */; };
+		844F6CC32631FFB700E1EDC0 /* EmojiListView.DeailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F6CC22631FFB700E1EDC0 /* EmojiListView.DeailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		844F6CB32631FA1D00E1EDC0 /* EmojiListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiListView.swift; sourceTree = "<group>"; };
 		844F6CB72631FB1500E1EDC0 /* EmojiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiProvider.swift; sourceTree = "<group>"; };
 		844F6CBB2631FBE400E1EDC0 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
+		844F6CBE2631FD1B00E1EDC0 /* EmojiListView.ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiListView.ItemView.swift; sourceTree = "<group>"; };
+		844F6CC22631FFB700E1EDC0 /* EmojiListView.DeailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiListView.DeailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 		844F6CB62631FAF200E1EDC0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				844F6CBE2631FD1B00E1EDC0 /* EmojiListView.ItemView.swift */,
+				844F6CC22631FFB700E1EDC0 /* EmojiListView.DeailsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -172,6 +178,8 @@
 				844F6CB42631FA1D00E1EDC0 /* EmojiListView.swift in Sources */,
 				844F6CBC2631FBE400E1EDC0 /* Emoji.swift in Sources */,
 				844F6CB82631FB1500E1EDC0 /* EmojiProvider.swift in Sources */,
+				844F6CBF2631FD1B00E1EDC0 /* EmojiListView.ItemView.swift in Sources */,
+				844F6CC32631FFB700E1EDC0 /* EmojiListView.DeailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

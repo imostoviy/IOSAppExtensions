@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct EmojiListView: View {
+    private let emojies = EmojiProvider().all
+    
     var body: some View {
-        EmptyView()
+        NavigationView {
+            List(emojies) { emoji in
+                NavigationLink(destination: DetailsView(emoji: emoji)) {
+                    ItemView(emoji: emoji)
+                }
+            }
+            .navigationTitle("Emoji book")
+        }
+        .accentColor(.white)
     }
 }
 

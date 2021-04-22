@@ -8,7 +8,7 @@
 import Foundation
 
 struct Emoji {
-  let emoji: String
+  let emojiString: String
   let name: String
   let description: String
 }

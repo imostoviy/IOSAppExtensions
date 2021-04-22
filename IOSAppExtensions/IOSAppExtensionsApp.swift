@@ -11,7 +11,7 @@ import SwiftUI
 struct IOSAppExtensionsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            EmojiListView()
         }
     }
 }
